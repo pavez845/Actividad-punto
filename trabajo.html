@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css.css" type="text/css" rel="stylesheet">
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); generarCarta();">
+        <fieldset>
+            <center><legend><h1>Formulario de postulacion</h1></legend></center>
+            <br>
+            <br>
+            <label for="nombre">Ingresa tu nombre</label>
+            <input type="text" name="nombre" id="nombre" minlength="3" maxlength="20" required>
+            <br>
+            <br>
+            <label for="apellidop">Ingresa tu Apellido paterno</label>
+            <input type="text" name="apellidop" id="apellidop" minlength="3" maxlength="20" required>
+            <br>
+            <br>
+            <label for="apellidom">Ingresa tu Apellido Materno</label>
+            <input type="text" name="apellidom" id="apellidom" minlength="3" maxlength="20" required>
+            <br>
+            <br>
+            <label for="rut">Ingrese su rut con guion</label> 
+            <input type="text" name="rut" id="rut" minlength="9" maxlength="10" required>
+            <br>
+            <br>
+            <label for="fecha_nacimiento">Ingresa tu fecha de nacimiento</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+            <br>
+            <br>
+            <label for="edad">Seleccione su edad</label>
+            <input type="number" name="edad" id="edad" min="18" max="35" required>
+            <br>
+            <br>
+            <label for="celular">Ingrese su celular</label> 
+            <input type="text" name="celular" id="celular" minlength="9" maxlength="12" required>
+            <br>
+            <br>
+            <label for="email">Ingrese su Email</label> 
+            <input type="text" name="email" id="email">
+            <br>
+            <br>
+            <label for="profesion">Ingrese su profesión</label> 
+            <input type="text" name="profesion" id="profesion">
+            <br>
+            <br>
+            <label for="genero">Seleccione su genero</label> 
+            <select name="genero" id="genero">
+                <option value="1">Femenino</option>
+                <option value="2">Masculino</option>
+                <option value="3">Otro</option>
+            </select>
+            <br>
+            <br>
+            <label for="motivacion">Ingrese su motivacion para postular</label> <br>
+            <textarea cols="40" rows="10" id="motivacion" name="motivacion"></textarea>
+            <br>
+            <br>
+            <textarea id="carta" cols="40" rows="10" readonly></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

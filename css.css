@@ -1,0 +1,21 @@
+body {
+    background-image: url('https://turismoi.cl/uploads/cl/photo/photo_file/899/Chilo_.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+
+    fieldset {
+        background-color: rgb(255, 255, 255); 
+        padding: 20px; 
+    }
+
+    legend {
+        text-align: center; 
+    }
+
+    form {
+        width: 70%; 
+        height: 100vh; 
+        margin: 200px auto; 
+    }
+
+    }
