@@ -14,7 +14,7 @@ function generarCarta() {
     const cartaText = "Estimad@ me presento como " + nombre + " " + apellidoPaterno + " " + apellidoMaterno +
         ", RUT " + rut + ", de " + edad + " años, soy del género " + genero +
         ", mi fecha de nacimiento es " + fecha + ", actualmente tengo la profesión de " +
-        profesion + ", mi motivación para entrar aquí es: " + motivacion +
+        profesion + ", mi motivación para entrar aquí es " + motivacion +
         ", mi número es " + celular + ". Si desea contactarme, le dejo mi email: " + email;
         
     document.getElementById("carta").value = cartaText;
